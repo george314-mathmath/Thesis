@@ -599,7 +599,7 @@ def generate_tex_documents(left_endpoint_min,left_endpoint_max,width_max,m_size,
     for i in range(0,how_many_times):
         x,y =generate_mn(left_endpoint_min,left_endpoint_max,width_max,m_size,n_size)
         match,dist = interleaving(x,y)
-        doc = Document(default_filepath = "/Users/georgehujoel/Desktop/Thesis/Examples" ,geometry_options=geometry_options)
+        doc = Document(default_filepath =  "Put your desired filepath here",geometry_options=geometry_options)
         with doc.create(Section("The overall info")):
             doc.append("Here we have M is")
             doc.append(Math(data=[np.array(x)]))
